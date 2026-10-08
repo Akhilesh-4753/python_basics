@@ -1,4 +1,4 @@
-#1 Positive or negative or zero
+# 1-Positive or negative or zero
 
 user_number = input("Write any number :")
 
@@ -11,7 +11,7 @@ else:
 
 # -------------------------------------------------------------------------------#
 
-# Even or Add
+# 2-Even or Add
 
 user_number = input("Enter your number : ")
 even_number = int(user_number) % 2 == 0
@@ -23,7 +23,7 @@ else:
 
 # -------------------------------------------------------------------------------#
 
-# Largest number based on user input
+# 3-Largest number based on user input
 
 array_numbers = []
 
@@ -38,3 +38,16 @@ for num in array_numbers:
     if num > largest_number:
         largest_number = num
 print(f"Largest number is : {largest_number}")
+
+# -------------------------------------------------------------------------------#
+
+# Find Leap year
+
+year = int(input("Enter your Year : "))
+
+if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
+    print("This year is leap year")
+else:
+    print("Not leap year")
+
+# -------------------------------------------------------------------------------#
