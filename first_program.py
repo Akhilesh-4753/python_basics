@@ -51,3 +51,41 @@ else:
     print("Not leap year")
 
 # -------------------------------------------------------------------------------#
+
+# Calculator
+
+def menu():
+
+    print("-------------------Menu----------------------")
+
+    print("1-Addition")
+    print("2-Subtraction")
+    print("3-Multiplication")
+    print("4-Division")
+
+    print("---------------------------------------------")
+
+menu()
+
+user_choice = int(input("Enter your choice : "))
+
+while user_choice > 4 or user_choice < 1:
+    menu()
+    print("Enter valid choice")
+    user_choice = int(input("Enter your choice : "))
+
+num1 = float(input("Enter your first number : "))
+num2 = float(input("Enter your second number : "))
+
+if user_choice == 1:
+    result = num1+num2
+    print(f"Result is : {result}")
+elif user_choice == 2:
+    result = num1-num2
+    print(f"Result is : {result}")
+elif user_choice == 3:
+    result = num1*num2
+    print(f"Result is : {result}")
+else:
+    result = num1/num2
+    print(f"Result is : {result}")
