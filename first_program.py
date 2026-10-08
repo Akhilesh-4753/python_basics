@@ -89,3 +89,71 @@ elif user_choice == 3:
 else:
     result = num1/num2
     print(f"Result is : {result}")
+
+
+# -------------------------------------------------------------------------------#
+
+# print numbers 1 to 20 using for loop
+
+for i in range(1,21):
+    print(i)
+
+# -------------------------------------------------------------------------------#
+
+# print numbers backward using while loop
+
+i = 20
+while i>=1:
+    print(i)
+    i-=1
+
+# -------------------------------------------------------------------------------#
+
+# calculate sum of N numbers from user input
+
+n = int(input("Enter number : "))
+
+total = 0
+i = 1
+
+while i <= n:
+    total+=i
+    i+=1
+print(total)
+
+
+# -------------------------------------------------------------------------------#
+
+# count even number
+
+count = 0
+
+for i in range(1,101):
+    if( i % 2 == 0 ):
+        count += 1
+
+print(f"count is {count}")
+
+# (or)
+
+count = 0
+
+for i in range(2,101,2):
+    count += 1
+print(count)
+
+# -------------------------------------------------------------------------------#
+
+# Print numbers from 1 to 50. Replace multiples of 3 with Fizz, multiples of 5 with Buzz, and multiples of both with FizzBuzz.
+
+for i in range(1,51):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)  
+
+# - -------------------------------------------------------------------------
