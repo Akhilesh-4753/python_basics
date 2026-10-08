@@ -156,4 +156,69 @@ for i in range(1,51):
     else:
         print(i)  
 
-# - -------------------------------------------------------------------------#
+# -------------------------------------------------------------------------------#
+
+# Login page
+
+username = "akhilesh"
+password = "akhi@123"
+
+print("--------------Login---------------")
+
+entered_username = input("Enter your username : ")
+while entered_username != username:
+    print("Username is wrong")
+    entered_username = input("Enter your username : ")
+
+entered_password = input("Enter your password : ")
+
+while entered_password != password:
+        print("Password is wrong")
+        entered_password = input("Enter your password : ")
+    
+print("Login successful")
+
+# -------------------------------------------------------------------------------#
+
+# ATM Menu 
+total_amount = 1000
+
+print("------------- Menu ------------")
+print("1. Check Balance")
+print("2. Deposit")
+print("3. Withdraw")
+print("4. Exit")
+print("-------------------------------")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+
+    print(f"Your balance is ₹{total_amount}")
+
+elif choice == 2:
+
+    deposit_amount = int(input("Enter your deposit amount: "))
+    total_amount = total_amount + deposit_amount
+
+    print(f"₹{deposit_amount} deposited successfully.")
+    print(f"Your new balance is ₹{total_amount}")
+
+elif choice == 3:
+
+    withdraw_amount = int(input("Enter amount to withdraw: "))
+
+    if withdraw_amount > total_amount:
+        print("Insufficient balance")
+    else:
+        total_amount = total_amount - withdraw_amount
+        print(f"₹{withdraw_amount} withdrawn successfully.")
+        print(f"Your remaining balance is ₹{total_amount}")
+
+elif choice == 4:
+
+    print("You exited the ATM.")
+
+else:
+
+    print("Invalid choice")
