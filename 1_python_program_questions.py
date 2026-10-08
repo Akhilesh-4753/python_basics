@@ -41,7 +41,7 @@ print(f"Largest number is : {largest_number}")
 
 # -------------------------------------------------------------------------------#
 
-# Find Leap year
+# 4-Find Leap year
 
 year = int(input("Enter your Year : "))
 
@@ -52,7 +52,7 @@ else:
 
 # -------------------------------------------------------------------------------#
 
-# Calculator
+# 5-Calculator
 
 def menu():
 
@@ -93,14 +93,14 @@ else:
 
 # -------------------------------------------------------------------------------#
 
-# print numbers 1 to 20 using for loop
+# 6-print numbers 1 to 20 using for loop
 
 for i in range(1,21):
     print(i)
 
 # -------------------------------------------------------------------------------#
 
-# print numbers backward using while loop
+# 7-print numbers backward using while loop
 
 i = 20
 while i>=1:
@@ -124,7 +124,7 @@ print(total)
 
 # -------------------------------------------------------------------------------#
 
-# count even number
+# 8-count even number
 
 count = 0
 
@@ -144,7 +144,7 @@ print(count)
 
 # -------------------------------------------------------------------------------#
 
-# Print numbers from 1 to 50. Replace multiples of 3 with Fizz, multiples of 5 with Buzz, and multiples of both with FizzBuzz.
+# 9-Print numbers from 1 to 50. Replace multiples of 3 with Fizz, multiples of 5 with Buzz, and multiples of both with FizzBuzz.
 
 for i in range(1,51):
     if i % 3 == 0 and i % 5 == 0:
@@ -158,7 +158,7 @@ for i in range(1,51):
 
 # -------------------------------------------------------------------------------#
 
-# Login page
+# 10-Login page
 
 username = "akhilesh"
 password = "akhi@123"
@@ -180,7 +180,8 @@ print("Login successful")
 
 # -------------------------------------------------------------------------------#
 
-# ATM Menu 
+# 11-ATM Menu 
+
 total_amount = 1000
 
 print("------------- Menu ------------")
